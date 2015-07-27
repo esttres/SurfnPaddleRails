@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%yield (:top)%></title>
+    <link href="squidstyles.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+
+  </head>
+
+  <body>
+    <header class="container">
+      <div class="row">
+        <div class="col-xs-12 jumbotron">
+          <div class="row">
+            <h5 class="col-xs-6 text-left">
+            <span class="blog">Squidbillies Blog</span>
+            </h5>
+            <h5 class="col-xs-6 text-right">
+              <span class="about">About</span>
+              <span class="search">Search</span>
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </h5>
+          </div>
+          <h1 class="text-center">Squidbillies, Do not touch the trim!</h1>
+          <h5 class="text-center">An Ironyard Academy Project Est Summer 2015</h5>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="container">
+      <div class="row">
+
+        <%=yield%>
+
+      </div>
+    </main>
+    
+    <hr class="hr">
+    <footer class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">
+            Most Popular Satanic Posts
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="fcont" id="cont1">
+          Container 1
+        </div>
+        <div class="fcont" id="cont2">
+          Container 2
+        </div>
+        <div class="fcont" id="cont3">
+          Container 3
+        </div>
+        <div class="fcont" id="cont4">
+          Container 4
+        </div>
+      </div>
+      <div class="row">
+        <p class="col-xs-6 text-left">
+          The Ironyard Copyright 2015, All rights surrendered!
+        </p>
+        <div class="col-xs-6">
+          <ul class="list-inline text-right">
+            <li>Nav Item 1</li>
+            <li>Nav Item 2</li>
+            <li>Nav Item 3</li>
+            <li>Nav Item 4</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
